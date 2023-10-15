@@ -1,7 +1,3 @@
-variable "region" {
-  default = "us-west-2"
-}
-
-provider "aws" {
-  region = var.region
+provider "aws" = ["registry.terraform.io/hashicorp/aws"] {
+  region = "us-west-2"
 }
