@@ -1,3 +1,11 @@
-provider "registry.terraform.io/hashicorp/aws" {
-  region = "us-west-2"
+terraform {
+  required_providers {
+    aws = {
+      source  = "registry.terraform.io/hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+provider "aws" {
+  region = "us-east-1"
 }
