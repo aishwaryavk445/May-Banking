@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t aishwaryavk445/banking-project:1.0 .'
+                sh 'docker build -t aishwaryavk445/banking-project:1.0.'
             }
         }
         stage('Docker Push Image') {
